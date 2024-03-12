@@ -41,7 +41,6 @@
 | ls -R | Entire content of folder in reverse alphabetical order |
 | sudo [command] | Run command with the security privileges of the superuser |
 | open [file] | Opens a file ( as if you double clicked it ) |
-| top | Displays active processes. Press q to quit |
 | nano [file] | Opens the file using the nano editor |
 | vim [file] | Opens the file using the vim editor |
 | clear |  Clears the screen |
@@ -68,6 +67,7 @@
 | pbpaste | Paste clipboard contents |
 | pbpaste > [file] | Paste clipboard contents into file|
 | less [file]|  Output file content delivered in screensize chunks |
+|head [file]| Output first 10 lines of a file|
 
 
 ### Directory Management
@@ -95,3 +95,58 @@
 | ----------- | ----------- |
 | [command a] \| [command b] | Run command a and then pass the output as input to command b|
 | [command a] \| tee [file] \| [command b] |Split the output of command a, sending it simultaneously to both a file and the input of command b|
+
+
+### Chaining
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| [command a]; [command b] | Run command a and then b, regardless of success of a |
+| [command a] && [command b] | Run command b if a succeeded |
+| [command a] \|\| [command b] | Run command b if a failed |
+| [command a] & | Run command a in background |
+
+### History
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| history | Shows history of stuff typed|
+|up arrow / down arrow| shows last/next stuff typed|
+| Ctrl + r  | Interactively search through previously typed commands |
+| ![value] |  Execute the last command typed that starts with ‘value’ |
+| ![value]:p |  Print to the console the last command typed that starts with ‘value’ |
+| !! |  Execute the last command typed |
+| !!:p |  Print to the console the last command typed |
+
+
+### Search
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| find [dir] -name "file"| Find all files named "file" inside [dir]
+(use wildcards [*] to search for parts of
+filenames, e.g. "file.*")|
+|grep "text" [file]| Output all occurrences of "text" inside
+[file] (add -i for case-insensitivity|
+|grep -rl "text" [dir]|Search for all files containing "text"
+inside [dir]|
+
+
+### Network
+
+| Key/Command | Description |
+| ----------- | ----------- |
+|ping [host]| Ping host and display status|
+|whois [domain]| Display whois information for a domain|
+| curl -O [url/to/file]|Download file from URL into currently working directory|
+
+
+### Processes
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| ps ax | Output currently running processes|
+| top | Displays live info about active processes. Press q to quit |
+|kill [pid]| Kill current process with ID pid|
+
+
