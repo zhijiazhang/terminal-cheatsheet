@@ -46,3 +46,25 @@
 | vim [file] | Opens the file using the vim editor |
 | clear |  Clears the screen |
 | reset |  Resets the terminal display |
+
+
+### File Management
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| touch [file] |   Create a new file |
+| pwd | Full path to working directory |
+| . |  Current directory |
+| .. | Parent directory|
+| cat [file] | Display contents of file to terminal|
+| rm [file] |  Remove a file |
+| rm -i [file] | Remove with confirmation |
+| rm -r [dir] | Remove a directory and contents |
+| rm -f [file] | Force removal without confirmation |
+| cp [file] [newfile] | Copy file to newfile |
+| cp [file] [dir] | Copy file to directory |
+| mv [file] [new filename] | Move file or move a file to itself (renaming) |
+| pbcopy < [file] | Copies file contents to clipboard |
+| pbpaste | Paste clipboard contents |
+| pbpaste > [file] | Paste clipboard contents into file|
+| less [file]|  Output file content delivered in screensize chunks |
