@@ -68,3 +68,13 @@
 | pbpaste | Paste clipboard contents |
 | pbpaste > [file] | Paste clipboard contents into file|
 | less [file]|  Output file content delivered in screensize chunks |
+
+
+### Directory Management
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| mkdir [dir] | Create new directory |
+| mkdir -p [dir]/[dir] |  Create nested directories |
+| rmdir [dir] | Remove directory ( only operates on empty directories ) |
+| rm -r [dir] | Remove directory and contents |
