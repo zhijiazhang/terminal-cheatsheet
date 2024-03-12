@@ -78,3 +78,20 @@
 | mkdir -p [dir]/[dir] |  Create nested directories |
 | rmdir [dir] | Remove directory ( only operates on empty directories ) |
 | rm -r [dir] | Remove directory and contents |
+
+
+### Redirection
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| [command] > [file] |  Sets file as STDOUT, overwrites current file contents (creates file if non-existent)|
+| [command] >> [file] | Sets file as STDOUT, appends to current file (creates file if non-existent)|
+| [command] < [file] | Sets file as STDIN to command |
+
+
+### Piping
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| [command a] \| [command b] | Run command a and then pass the output as input to command b|
+| [command a] \| tee [file] \| [command b] |Split the output of command a, sending it simultaneously to both a file and the input of command b|
