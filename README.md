@@ -6,7 +6,7 @@
 | ----------- | ----------- |
 | Ctrl + A   | Go to the beginning of the line you are currently typing on.|
 | Ctrl + E   | Go to the end of the line you are currently typing on.|
-| Ctrl + L or CMD + K or clear  | Clears the Screen |
+| Ctrl + L or CMD + K | Clears the Screen |
 | Ctrl + U   | Cut everything backwards to beginning of line |
 | Ctrl + K   | Cut everything forward to end of line |
 | Ctrl + W   | Cut one word backwards using white space as delimiter |
@@ -24,3 +24,25 @@
 | Esc + T  | Swap the last two words before the cursor |
 | Esc + Backspace | Cut one word backwards using none alphabetic characters as delimiters |
 | Tab  | Auto-complete files and folder names |
+
+
+### Core Commands
+
+| Key/Command | Description |
+| ----------- | ----------- |
+| cd [folder] | Change directory e.g. `cd Documents` |
+| cd or cd ~  |  Home directory (Users/username) |
+| cd /  | Root of drive |
+| cd -  | Previous directory |
+| ls | Short listing of everything in the directory |
+| ls -l | Long listing of everything in the directory |
+| ls -a | Listing everything including hidden files |
+| ls -lh| Long listing of everything with file sizes |
+| ls -R | Entire content of folder in reverse alphabetical order |
+| sudo [command] | Run command with the security privileges of the superuser |
+| open [file] | Opens a file ( as if you double clicked it ) |
+| top | Displays active processes. Press q to quit |
+| nano [file] | Opens the file using the nano editor |
+| vim [file] | Opens the file using the vim editor |
+| clear |  Clears the screen |
+| reset |  Resets the terminal display |
